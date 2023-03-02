@@ -1,35 +1,7 @@
-import React, { useRef, useState } from 'react';
-import logo from '../../assets/img/logo.svg';
-import Greetings from '../../containers/Greetings/Greetings';
-// import './Popup.css';
-
+import { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import '../Overlay/Overlay.css';
-
-// const Popup = () => {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/pages/Popup/Popup.jsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React!
-//         </a>
-//       </header>
-//     </div>
-//   );
-// };
-
-// export default Popup;
-
+import './Overlay.css';
 
 function Globe(props) {
   // This reference gives us direct access to the THREE.Mesh object
@@ -54,7 +26,7 @@ function Globe(props) {
   )
 }
 
-export default function Popup() {
+export default function Overlay() {
   return (
     <div className="App">
       <Canvas>
