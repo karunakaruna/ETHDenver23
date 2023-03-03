@@ -1,4 +1,8 @@
-function Globe(props) {
+import React from 'react';
+import { Canvas, useFrame } from '@react-three/fiber';
+import { OrbitControls } from '@react-three/drei';
+
+export default function Globe(props) {
     // This reference gives us direct access to the THREE.Mesh object
     const ref = useRef()
     // Hold state for hovered and clicked events
@@ -15,7 +19,7 @@ function Globe(props) {
         onClick={(event) => click(!clicked)}
         onPointerOver={(event) => hover(true)}
         onPointerOut={(event) => hover(false)}>
-        <sphereGeometry args={[1, 1, 1]} />
+        <sphereGeometry args={[15, 32, 16]} />
         <meshStandardMaterial color={hovered ? 'hotpink' : 'orange'} />
       </mesh>
     )
