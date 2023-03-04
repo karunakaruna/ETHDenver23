@@ -1,6 +1,3 @@
-console.log('This is the background page.');
-console.log('Put the background scripts here.');
-
 function getURL() {
     // Get the current active tab
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
@@ -17,3 +14,4 @@ function getURL() {
         console.log("url: " + urlStr);
     });
 }
+
