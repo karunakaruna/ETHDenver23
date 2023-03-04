@@ -9,10 +9,8 @@ export default function GreetingComponent() {
   return(
     <div>
       <img src={icon} className="App-logo" alt="logo" />
-      <p>
-        Welcome to Compass
-      </p>
-      <br></br>
+      <p>Welcome to Compass!</p>
+      <p>Please sign in</p>
       <Button className='loginButton'><img src={lens} alt="lens" /></Button>
       <Button className='loginButton'><img src={metamask} alt="metamask" /></Button>
     </div>

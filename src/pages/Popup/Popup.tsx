@@ -5,7 +5,7 @@ import './Popup.css';
 
 const Popup = () => {
 
-  const [user, setUser] = useState(true)
+  const [user, setUser] = useState(false)
 
   return (
     <div className='App'>
