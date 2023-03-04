@@ -1,18 +1,17 @@
 import React, { useRef, useState } from 'react';
-import logo from '../../assets/img/logo.svg';
-import icon from '../../assets/img/icon-128.png';
 import GreetingComponent from '../../containers/Greeting.jsx';
+import App from '../../containers/Globe.jsx';
 import './Popup.css';
 
 const Popup = () => {
 
-  const [user, setUser] = useState(false)
+  const [user, setUser] = useState(true)
 
   return (
     <div className='App'>
       <header className="App-header">
       {user? 
-        <div>Success</div>
+        <App />
         :
         <GreetingComponent />
       }
