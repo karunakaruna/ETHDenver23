@@ -7,7 +7,6 @@
   text-align: center;
   height: 100%;
   padding: 10px;
-  /* background-color: #282c34; */
   background-color: black !important;
 }
 
@@ -34,6 +33,12 @@
 
 .App-link {
   color: #61dafb;
+}
+
+.loginButton {
+  height: 20vmin;
+  width: 30vmin;
+  margin: .5rem;
 }
 
 @keyframes App-logo-spin {
