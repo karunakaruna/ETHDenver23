@@ -1,0 +1,90 @@
+
+🌟get the url
+// Get the current active tab
+chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+  // Get the URL of the active tab
+  var url = tabs[0].url;
+
+  // Save the URL to a string
+  var urlStr = url.toString();
+
+  // Use the URL string as needed
+  console.log(urlStr);
+});
+
+
+🌟set the url 
+// Get the current active tab
+chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+  // Get the URL of the active tab
+  var url = tabs[0].url;
+
+  // Save the URL to a string
+  var urlStr = url.toString();
+
+  // Set the URL of the current tab to the value of the target URL string
+  chrome.tabs.update({ url: targetUrl });
+
+  // Use the URL string as needed
+  console.log(urlStr);
+});
+
+
+
+
+
+// Assuming you have a scene, camera, and renderer set up
+
+// Define your raycaster and mouse coordinates
+const raycaster = new THREE.Raycaster();
+const mouse = new THREE.Vector2();
+
+// Set up your click event listener
+window.addEventListener('click', onClick);
+
+function onClick(event) {
+  // Calculate the mouse coordinates normalized to the viewport
+  mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+  mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+
+  // Set up the raycaster
+  raycaster.setFromCamera(mouse, camera);
+
+  // Get the intersections between the raycaster and the objects in the scene
+  const intersections = raycaster.intersectObjects(scene.children, true);
+
+  // If there is at least one intersection
+  if (intersections.length > 0) {
+    // Get the first intersection
+    const intersection = intersections[0];
+
+    // Get the UV coordinates of the intersection point on the face
+    const uv = intersection.uv;
+
+    // Get the world coordinates of the intersection point
+    const point = intersection.point;
+
+    // Get the URL of the active tab
+    chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+      const url = tabs[0].url;
+
+      // Get the name of the active tab
+      const name = tabs[0].title;
+
+      // Create an object with the desired properties
+      const data = {
+        "ID": 1,
+        "name": name,
+        "URL": url,
+        "tx": point.x,
+        "ty": point.y,
+        "tz": point.z,
+        "mapu": uv.x,
+        "mapv": uv.y
+      };
+
+      // Do something with the data, like sending it to a server or saving it to a file
+      console.log(data);
+    });
+  }
+}
