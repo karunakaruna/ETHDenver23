@@ -45,3 +45,6 @@ This code was adapted a chrome-extension boiler-plate by Michael Xieyang Liu | [
 Concept by Jonny Ostrem
 Touchdesigner Prototype by Jonny Ostrem (Memory)
 Chrome extension prototype by bitTorin
+
+## Note
+The code contained within this repository is forked from a chrome-extension repository. No plagerism is intended. My primary focus was to explore the UI/UX of this tool using Touchdesigner (.toe file attached).
