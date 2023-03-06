@@ -10,7 +10,7 @@
 
 ### Context
 
-The ‘Metaverse’ as it exist now is comprised of a vast field of disconnected spaces and platforms. Web-based metaverse platforms offer the greatest accessibility and possibility for cross-platform travel, through links and portals. Platforms like Monaverse, Hyperfy, Spatial, Decentraland, OnCyber and Voxels give us a glimpse in the potential contained, in these worlds.
+The ‘Metaverse’ as it exist now is comprised of a vast field of disconnected spaces and platforms. Web-based metaverse platforms offer the greatest accessibility and possibility for cross-platform travel, through links and portals. Platforms like Monaverse, Hyperfy, Spatial, Decentraland, OnCyber and Voxels give us a glimpse of the potential contained in these worlds.
 
 ### Problem
 
